@@ -43,6 +43,8 @@ Start the backend server:
 bash
 Copy code
 node server.js
+
+### Frontend
 Frontend Setup
 Install dependencies:
 
