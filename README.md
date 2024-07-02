@@ -83,5 +83,12 @@ It will take you to
 
 Here you can upload animations using your AWs necessary credentials in backend/.env fiile
 
+# MONGO_URI=mongodb://localhost:27017/OfflineDB
+# PORT=4000
+# AWS_ACCESS_KEY_ID=AWS_ACCESS_KEY_ID
+# AWS_SECRET_ACCESS_KEY=AWS_SECRET_ACCESS_KEY
+# AWS_REGION=us-east-1
+# AWS_BUCKET_NAME=aws-file-storage
+
 ## Enjoy
 
