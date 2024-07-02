@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const typeDefs = require('./schema');
 const resolvers = require('./resolvers');
 const dotenv = require('dotenv');
+const createServer = require('./createServer');
 
 dotenv.config();
 
@@ -32,6 +33,7 @@ const startServer = async () => {
   app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}${server.graphqlPath}`);
   });
+
 };
 
 startServer();
