@@ -75,10 +75,10 @@ Home Page will Display
 ![image](https://github.com/rubaiyat2009/offline-first-lottie/assets/23079997/5ee1c68e-d0e4-4efb-8e97-8e334ba6b29e)
 
 
-Once you click on 
+Search will show Serach results and Once you click on Manage Animations
 
 ## Manage Animations...
-It will take you to 
+Manage Animations will display
 
 ![image](https://github.com/rubaiyat2009/offline-first-lottie/assets/23079997/06a5871b-c63a-43f0-9fa0-5b8b26703fab)
 
