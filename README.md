@@ -25,52 +25,40 @@ This project involves creating a React application with strong offline functiona
 Backend Setup
 Install dependencies:
 
-bash
-Copy code
+## bash command
 cd lottie-animation-app/backend
 npm install express mongoose aws-sdk multer body-parser cors
+
 Configure environment variables:
 Create a .env file in the backend folder and add your AWS credentials and MongoDB connection string.
 
-plaintext
-Copy code
-AWS_ACCESS_KEY_ID=your_aws_access_key_id
-AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
-AWS_REGION=your_aws_region
-AWS_BUCKET_NAME=your_bucket_name
+## plaintext on .env
+# AWS_ACCESS_KEY_ID=your_aws_access_key_id
+# AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
+# AWS_REGION=your_aws_region
+# AWS_BUCKET_NAME=your_bucket_name
+
 Start the backend server:
 
-bash
-Copy code
-node server.js
+## bash command
+node index.js
+
 
 ### Frontend
 Frontend Setup
 Install dependencies:
 
-bash
-Copy code
-cd lottie-animation-app/frontend
-npm install
-npm install axios react-router-dom redux react-redux @material-ui/core @material-ui/icons lottie-web
-Register the service worker:
+## bash command
+# cd lottie-animation-app/frontend
+# npm install
+# npm install axios react-router-dom redux react-redux @material-ui/core @material-ui/icons lottie-web
+
+## Register the service worker:
 Add the following to src/index.js to register the service worker:
 
-javascript
-Copy code
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js').then(registration => {
-      console.log('SW registered: ', registration);
-    }).catch(registrationError => {
-      console.log('SW registration failed: ', registrationError);
-    });
-  });
-}
-Start the frontend development server:
+## Start the frontend development server:
 
-bash
-Copy code
+# bash command
 npm start
 
 1. Navigate to the `backend` directory.
