@@ -72,7 +72,8 @@ npm start
 ## HomePage 
 
 Home Page will Display
-![image](https://github.com/rubaiyat2009/offline-first-lottie/assets/23079997/71d8e344-086f-49ca-bf33-c71ef1ebfd86)
+![image](https://github.com/rubaiyat2009/offline-first-lottie/assets/23079997/5ee1c68e-d0e4-4efb-8e97-8e334ba6b29e)
+
 
 Once you click on 
 
