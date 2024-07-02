@@ -31,6 +31,29 @@ function createServer() {
     // Fetch animations and return them
     res.json({ animations: [/* array of animations */] });
     });
+
+    // Example using MongoDB and Express
+    app.get('/api/animations/search', async (req, res) => {
+    const searchQuery = req.query.query; // Assume a query param 'query' is sent
+    try {
+        const animations = await Animation.find({ $text: { $search: searchQuery } });
+        res.json(animations);
+    } catch (error) {
+        res.status(500).send(error.toString());
+    }
+    });
+
+    app.get('/api/animations/download/:id', async (req, res) => {
+        const animation = await Animation.findById(req.params.id);
+        if (animation) {
+            res.redirect(animation.fileUrl); // Redirect to the URL where the file is stored (e.g., S3 URL)
+        } else {
+            res.status(404).send('Animation not found');
+        }
+    });
+    
+
+
     // app.post('/api/animations/upload', (req, res) => {
     //     // Logic to handle the upload
     //     // Handle the upload

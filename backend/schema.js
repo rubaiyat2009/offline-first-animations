@@ -5,7 +5,7 @@ const typeDefs = gql`
     id: ID!
     title: String!
     url: String!
-    metadata: String!
+    description: String!
   }
 
   type Query {
@@ -13,7 +13,7 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    uploadAnimation(title: String!, url: String!, metadata: String!): Animation
+    uploadAnimation(title: String!, url: String!, description: String!): Animation
   }
 `;
 

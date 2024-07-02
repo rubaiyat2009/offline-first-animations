@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
 
-const animationSchema = new mongoose.Schema({
-  title: String,
-  url: String,
-  metadata: String,
+const AnimationSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  description: { type: String, required: false },
+  url: { type: String, required: true }
 });
 
-module.exports = mongoose.model('Animation', animationSchema);
+AnimationSchema.index({ name: 'text', description: 'text' });
+
+module.exports = mongoose.model('Animation', AnimationSchema);
