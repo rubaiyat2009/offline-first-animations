@@ -9,12 +9,16 @@ const AnimationManagement = () => {
   const [url, setUrl] = useState('');
 
   const fetchAnimations = async () => {
-    const { data } = await axios.get('/api/animations');
-    setAnimations(data);
-  };
+    try {
+        const response = await axios.get('http://localhost:4000/api/animations');
+        console.log(response.data); // Or whatever logic to handle the response
+    } catch (error) {
+        console.error('Failed to fetch animations:', error);
+    }
+};
 
   const uploadAnimation = async () => {
-    await axios.post('/api/animations/upload', { name, description, url });
+    await axios.post('http://localhost:4000/api/animations/upload', { name, description, url });
     fetchAnimations();
   };
 

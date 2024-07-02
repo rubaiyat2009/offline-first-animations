@@ -1,16 +1,17 @@
 // App.js
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './HomePage';
 import AnimationManagement from './components/AnimationManagement';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/manage-animations" element={<AnimationManagement />} />
-        {/* <Route path="/another-route" element={<AnotherComponent />} /> */}
-        {/* More routes can be added here */}
+      <Route path="/" element={<HomePage />} />
+      <Route path="/manage-animations" element={<AnimationManagement />} />
       </Routes>
     </Router>
+  
   );
 }
 
