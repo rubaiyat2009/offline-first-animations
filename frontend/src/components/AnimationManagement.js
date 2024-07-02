@@ -18,8 +18,18 @@ const AnimationManagement = () => {
 };
 
   const uploadAnimation = async () => {
-    await axios.post('http://localhost:4000/api/animations/upload', { name, description, url });
-    fetchAnimations();
+    try {
+        const response = await axios.post('http://localhost:4000/api/animations/upload', {
+            name: 'New Animation',
+            url: 'http://example.com/animation',
+            description: 'Example Description'
+        });
+        console.log(response.data);
+    } catch (error) {
+        console.error('Failed to upload animation:', error);
+    }
+    // await axios.post('http://localhost:4000/api/animations/upload', { name, description, url });
+    // fetchAnimations();
   };
 
   useEffect(() => {
