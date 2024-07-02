@@ -79,3 +79,21 @@ npm start
    ```env
    MONGO_URI=mongodb://localhost:27017/OfflineDB
    ```
+
+### Outcome
+## HomePage 
+
+Home Page will Display
+![image](https://github.com/rubaiyat2009/offline-first-lottie/assets/23079997/71d8e344-086f-49ca-bf33-c71ef1ebfd86)
+
+Once you click on 
+
+## Manage Animations...
+It will take you to 
+
+![image](https://github.com/rubaiyat2009/offline-first-lottie/assets/23079997/06a5871b-c63a-43f0-9fa0-5b8b26703fab)
+
+Here you can upload animations using your AWs necessary credentials in backend/.env fiile
+
+## Enjoy
+
