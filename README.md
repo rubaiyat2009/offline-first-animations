@@ -1,8 +1,8 @@
-# Offline-First Lottie Animation Management System
+# Offline-First Animation Management System
 
 ## Project Overview
 
-This project involves creating a React application with strong offline functionality, allowing users to search for, preview, upload, and download Lottie animations. It includes a detailed view of animations, displaying essential metadata, and supports offline access to this information even without an internet connection.
+This project involves creating a React application with strong offline functionality, allowing users to search for, preview, upload, and download animations. It includes a detailed view of animations, displaying essential metadata, and supports offline access to this information even without an internet connection.
 
 ## Technology Stack
 
@@ -15,7 +15,7 @@ This project involves creating a React application with strong offline functiona
 ## Features
 
 - **Search/Browse Animations**: Users can query animations using various criteria.
-- **Upload/Download**: Allows users to upload and download Lottie animation files.
+- **Upload/Download**: Allows users to upload and download animation files.
 - **Offline Capabilities**: Utilizes service workers for caching and offline access.
 - **GraphQL API**: Manages search queries, file uploads/downloads, and metadata retrieval.
 
@@ -72,7 +72,7 @@ npm start
 ## HomePage 
 
 Home Page will Display
-![image](https://github.com/rubaiyat2009/offline-first-lottie/assets/23079997/5ee1c68e-d0e4-4efb-8e97-8e334ba6b29e)
+![image](https://github.com/rubaiyat2009/offline-first-animations/assets/23079997/5ee1c68e-d0e4-4efb-8e97-8e334ba6b29e)
 
 
 Search will show Serach results and Once you click on Manage Animations
@@ -80,7 +80,7 @@ Search will show Serach results and Once you click on Manage Animations
 ## Manage Animations...
 Manage Animations will display
 
-![image](https://github.com/rubaiyat2009/offline-first-lottie/assets/23079997/06a5871b-c63a-43f0-9fa0-5b8b26703fab)
+![image](https://github.com/rubaiyat2009/offline-first-animations/assets/23079997/06a5871b-c63a-43f0-9fa0-5b8b26703fab)
 
 Here you can upload animations using your AWs necessary credentials in backend/.env fiile
 
